@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/strided-base-binary-addon-dispatch",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Dispatch to a native add-on applying a binary function to two input strided arrays.",
   "license": "Apache-2.0",
   "author": {
