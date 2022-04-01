@@ -1,0 +1,31 @@
+{
+  "name": "@stdlib/strided-base-binary-addon-dispatch",
+  "version": "0.0.0",
+  "description": "Dispatch to a native add-on applying a binary function to two input strided arrays.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/strided-base-binary-addon-dispatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "base",
+    "strided",
+    "array",
+    "dispatch",
+    "addon",
+    "add-on",
+    "native",
+    "binary"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
