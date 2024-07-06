@@ -1,7 +1,36 @@
-"use strict";var j=function(m,u){return function(){return u||m((u={exports:{}}).exports,u),u.exports}};var J=j(function(X,H){
-var D=require('@stdlib/assert-is-function/dist'),O=require('@stdlib/assert-is-typed-array-like/dist'),q=require('@stdlib/strided-base-dtype-resolve-enum/dist'),b=require('@stdlib/strided-base-reinterpret-complex64/dist'),p=require('@stdlib/strided-base-reinterpret-complex128/dist'),G=require('@stdlib/error-tools-fmtprodmsg/dist'),F=q("complex64"),P=q("complex128");function $(m,u){if(!D(m))throw new TypeError(G('1Md3c',m));if(!D(u))throw new TypeError(G('1Md2H',u));return L;function L(s,i,l,c,r,n,w,o,e,t){var v,g,a;if(!O(l)||!O(n)||!O(e))return u(s,i,l,c,r,n,w,o,e,t),e;if(i=q(i),r=q(r),o=q(o),i===null||r===null||o===null)throw new TypeError(h('1Md1L'));return i===F?v=b(l,0):i===P?v=p(l,0):v=l,r===F?g=b(n,0):r===P?g=p(n,0):g=n,o===F?a=b(e,0):o===P?a=p(e,0):a=e,m(s,i,v,c,r,g,w,o,a,t),e}}H.exports=$
-});var W=j(function(y,Q){
-var K=require('@stdlib/assert-is-function/dist'),x=require('@stdlib/assert-is-typed-array-like/dist'),M=require('@stdlib/assert-is-nonnegative-integer/dist').isPrimitive,E=require('@stdlib/strided-base-dtype-resolve-enum/dist'),S=require('@stdlib/strided-base-reinterpret-complex64/dist'),A=require('@stdlib/strided-base-reinterpret-complex128/dist'),I=require('@stdlib/strided-base-offset-view/dist'),U=require('@stdlib/strided-base-min-view-buffer-index/dist'),h=require('@stdlib/error-tools-fmtprodmsg/dist'),B=E("complex64"),R=E("complex128");function f(m,u){if(!K(m))throw new TypeError(h('1Md3c',m));if(!K(u))throw new TypeError(h('1Md2H',u));return L;function L(s,i,l,c,r,n,w,o,e,t,v,g,a){var T,V,C;if(!x(l)||!x(w)||!x(v))return u(s,i,l,c,r,n,w,o,e,t,v,g,a),v;if(i=E(i),n=E(n),t=E(t),i===null||n===null||t===null)throw new TypeError(h('1Md1L'));if(!M(r))throw new TypeError(h('1MdAC',r));if(!M(e))throw new TypeError(h('1MdAD',e));if(!M(a))throw new TypeError(h('1MdAE',a));return r=U(s,c,r),e=U(s,o,e),a=U(s,g,a),i===B?T=S(l,r):i===R?T=A(l,r):T=I(l,r),n===B?V=S(w,e):n===R?V=A(w,e):V=I(w,e),t===B?C=S(v,a):t===R?C=A(v,a):C=I(v,a),m(s,i,T,c,n,V,o,t,C,g),v}}Q.exports=f
-});var k=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),_=J(),N=W();k(_,"ndarray",N);module.exports=_;
-/** @license Apache-2.0 */
+"use strict";var J=function(m,l){return function(){return l||m((l={exports:{}}).exports,l),l.exports}};var _=J(function(y,W){"use strict";var K=require("@stdlib/assert-is-function"),L=require("@stdlib/assert-is-typed-array-like"),q=require("@stdlib/strided-base-dtype-resolve-enum"),b=require("@stdlib/strided-base-reinterpret-complex64"),B=require("@stdlib/strided-base-reinterpret-complex128"),F=require("@stdlib/strided-base-reinterpret-boolean"),Q=require("@stdlib/string-format"),P=q("complex64"),A=q("complex128"),M=q("bool");function z(m,l){if(!K(m))throw new TypeError(Q("invalid argument. First argument must be a function. Value: `%s`.",m));if(!K(l))throw new TypeError(Q("invalid argument. Second argument must be a function. Value: `%s`.",l));return C;function C(g,i,v,c,r,n,t,o,e,s){var u,w,a;if(!L(v)||!L(n)||!L(e))return l(g,i,v,c,r,n,t,o,e,s),e;if(i=q(i),r=q(r),o=q(o),i===null||r===null||o===null)throw new TypeError("invalid arguments. Unable to resolve a strided array function supporting the provided array argument data types.");return i===P?u=b(v,0):i===A?u=B(v,0):i===M?u=F(v,0):u=v,r===P?w=b(n,0):r===A?w=B(n,0):r===M?w=F(n,0):w=n,o===P?a=b(e,0):o===A?a=B(e,0):o===M?a=F(e,0):a=e,m(g,i,u,c,r,w,t,o,a,s),e}}W.exports=z});var N=J(function(rr,f){"use strict";var $=require("@stdlib/assert-is-function"),S=require("@stdlib/assert-is-typed-array-like"),x=require("@stdlib/assert-is-nonnegative-integer").isPrimitive,h=require("@stdlib/strided-base-dtype-resolve-enum"),I=require("@stdlib/strided-base-reinterpret-complex64"),U=require("@stdlib/strided-base-reinterpret-complex128"),p=require("@stdlib/strided-base-reinterpret-boolean"),R=require("@stdlib/strided-base-offset-view"),j=require("@stdlib/strided-base-min-view-buffer-index"),V=require("@stdlib/string-format"),D=h("complex64"),G=h("complex128"),H=h("bool");function X(m,l){if(!$(m))throw new TypeError(V("invalid argument. First argument must be a function. Value: `%s`.",m));if(!$(l))throw new TypeError(V("invalid argument. Second argument must be a function. Value: `%s`.",l));return C;function C(g,i,v,c,r,n,t,o,e,s,u,w,a){var E,T,O;if(!S(v)||!S(t)||!S(u))return l(g,i,v,c,r,n,t,o,e,s,u,w,a),u;if(i=h(i),n=h(n),s=h(s),i===null||n===null||s===null)throw new TypeError("invalid arguments. Unable to resolve a strided array function supporting the provided array argument data types.");if(!x(r))throw new TypeError(V("invalid argument. First input array offset must be a nonnegative integer. Value: `%s`.",r));if(!x(e))throw new TypeError(V("invalid argument. Second input array offset must be a nonnegative integer. Value: `%s`.",e));if(!x(a))throw new TypeError(V("invalid argument. Output array offset must be a nonnegative integer. Value: `%s`.",a));return r=j(g,c,r),e=j(g,o,e),a=j(g,w,a),i===D?E=I(v,r):i===G?E=U(v,r):i===H?E=p(v,r):E=R(v,r),n===D?T=I(t,e):n===G?T=U(t,e):n===H?T=p(t,e):T=R(t,e),s===D?O=I(u,a):s===G?O=U(u,a):s===H?O=p(u,a):O=R(u,a),m(g,i,E,c,n,T,o,s,O,w),u}}f.exports=X});var Y=require("@stdlib/utils-define-nonenumerable-read-only-property"),k=_(),Z=N();Y(k,"ndarray",Z);module.exports=k;
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
 //# sourceMappingURL=index.js.map
