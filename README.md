@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-binary-addon-dispatch@deno/mod.js';
+import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-binary-addon-dispatch@v0.3.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-binary-addon-dispatch@deno/mod.js';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-binary-addon-dispatch@v0.3.0-deno/mod.js';
 ```
 
 #### dispatch( addon, fallback )
@@ -257,7 +257,7 @@ where
 
 ```javascript
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-binary-addon-dispatch@deno/mod.js';
+import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-binary-addon-dispatch@v0.3.0-deno/mod.js';
 
 function addon( N, dtypeX, x, strideX, dtypeY, y, strideY, dtypeZ, z, strideZ ) {
     console.log( x );
